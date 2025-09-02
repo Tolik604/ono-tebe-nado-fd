@@ -11,16 +11,16 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navigate-header">
-        <ul class="menu-header">
-          <li class="menu-header-list active-list">
-            <a>главная</a>
+      <nav class="header-menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link header__link_active">главная</a>
           </li>
-          <li class="menu-header-list">
-            <a class="underline-mod" href="#0">посмотреть лоты</a>
+          <li class="header__links-list-item">
+            <a class="header__link underline-mod" href="#0">посмотреть лоты</a>
           </li>
-          <li class="menu-header-list">
-            <a class="underline-mod" href="#0">об аукционе</a>
+          <li class="header__links-list-item">
+            <a class="header__link underline-mod" href="#0">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -31,20 +31,28 @@
           alt="Логотип проекта темный"
         />
       </a>
-      <address class="address">
-          <a class="underline-mod" href="#0">+9 999 555 5555</a>
-          <a class="underline-mod" href="#0">info@sobaka.ge</a>
+      <address class="header-address">
+          <a class="underline-mod" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="underline-mod" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main class="main">
-      <section class="cover-title overlay">
-        <h1>
-          <div class="description">
-            <p></p>
-            <button></button>
-          </div>
-        </h1>
+      <section class="cover">
+        <div class="overlay"></div>
+
+          <h1 class="cover-title letter-spacing-extended">
+
+              <span class="aligned-text aligned-text_left ">ОНО</span>
+              <span class="aligned-text aligned-text_center">ТЕБЕ</span>
+              <span class="aligned-text aligned-text_right">НАДО</span>
+
+          </h1>
+
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button class="bet-button">Сделать ставку</button>
+        </div>
       </section>
       <section class="lots-title">
         <h2>ЛОТЫ</h2>

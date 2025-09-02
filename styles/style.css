@@ -8,59 +8,113 @@
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
-  background-color: antiquewhite;
+  background-color: #fff;
 }
 
 /* .header-navigate {} */
 
-.menu-header {
+.header__links-list {
   display: flex;
+  gap: 33px;
   box-sizing: border-box;
   width: 391.48px;
-  gap: 33px;
   margin-left: 50px;
   list-style-type: circle;
 }
 
-/* .menu-header-list {} */
-
-.active-list {
+.header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
+/* .header__links-list-item {} */
+
 .underline-mod {
-  text-decoration: none;
   border-bottom: 1px black solid;
+  text-decoration: none;
 }
 
 .header__logo {
   display: block;
-  margin-top: 7px;
   width: 134px;
+  margin-top: 8px;
 }
 
 /*.header__logo-image {}*/
 
-.address {
+.header-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 236px;
+  margin-left: 193px;
   font-family: "Raleway";
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
-  width: 236px;
-  margin-left: 193px;
 }
 
 /*.main{
   background: gray;
   height: 757px;
 }*/
-.cover-title {
-  height: 757px;
+.cover {
+  position: relative;
+  z-index: -2;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 125% auto;
 }
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover-title {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 100px;
+
+  /* margin-top: 50px; */
+}
+.letter-spacing-extended{
+  letter-spacing: 30px;
+}
+
+.aligned-text {
+  display: block;
+
+
+
+}
+
+.aligned-text_left{
+  padding-top: 166px;
+  padding-left: 50px;
+  text-align: left;
+
+
+}
+
+.aligned-text_center{
+  text-align: center;
+    padding-top: 18px;
+  padding-left: 30px;
+}
+
+.aligned-text_right {
+  text-align: right;
+    padding-top: 18px;
+  padding-right: 20px;
+}
+
+
 .footer {
-    display: grid;
+  display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   height: 293px;
