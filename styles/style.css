@@ -78,9 +78,8 @@
   color: #fff;
   font-family: "Raleway";
   font-size: 100px;
-
-  /* margin-top: 50px; */
 }
+
 .letter-spacing-extended {
   letter-spacing: 30px;
 }
@@ -135,15 +134,113 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
+/*вся секция*/
+.lots{
+
+}
+/*заголовок секции*/
+.lots__heading{
+font-size: 40px;
+font-weight: bold;
+margin-top: 183px;
+margin-bottom: 27px;
+margin-left: 64px;
+}
+
+/*список карточек*/
+.lots__card-list{
+
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+
+/*пункт списка карточек*/
+.lots__card-list-item{
+list-style-type: none;
+
+  width: 334px;
+  min-height: 596px;
+}
+
+/*ссылка, обрамляющая карточку*/
+.card-link{
+height: 100%;
+color: #fff;
+text-decoration: none;
+}
+
+/*карточка*/
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* flex-wrap: nowrap; */
+  align-items: center;
+position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding: 48px;
+
+}
+
+/*заголовок карточки*/
+.card__title{
+    font-family: 'Raleway';
+    text-decoration: underline;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  width: 254px;
+}
+
+/*текст карточки*/
+.card__text{
+      font-family: 'Raleway';
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  width: 254px;
+}
+
+/**/
+.card_type_film{
+  background-image: url(../images/card-lot-01.jpg);
+  z-index: -2;
+}
+
+/**/
+.card_type_book{
+  background-image: url(../images/card-lot-02.jpg);
+  z-index: -2;
+}
+
+/**/
+.card_type_picture{
+  background-image: url(../images/card-lot-03.jpg);
+  z-index: -2;
+}
+
+.lots__look-more-link{
+  display: block;
+  font-family: 'Raleway';
+  font-size: 20px;
+  margin-top: 31px;
+  margin-left: 64px;
+}
+
+
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   height: 293px;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
   background-color: antiquewhite;
-  
+
 }
