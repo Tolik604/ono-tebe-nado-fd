@@ -28,10 +28,10 @@
 
 /* .header__links-list-item {} */
 
-.underline-mod {
+/* .underline-mod {
   border-bottom: 1px black solid;
   text-decoration: none;
-}
+} */
 
 .header__logo {
   display: block;
@@ -45,12 +45,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 236px;
+  width: 240px;
+  height: 98px;
   margin-left: 193px;
-  font-family: "Raleway";
+  color: rgba(0, 0, 0, 1);
+  font-family: Raleway;
+  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
   line-height: 24.3px;
+  letter-spacing: 0%;
+  font-style: normal;
+  text-align: left;
 }
 
 /*.main{
@@ -135,100 +140,147 @@
 }
 
 /*вся секция*/
-.lots{
-
+.lots {
 }
 /*заголовок секции*/
-.lots__heading{
-font-size: 40px;
-font-weight: bold;
-margin-top: 183px;
-margin-bottom: 27px;
-margin-left: 64px;
+.lots__heading {
+  margin-top: 183px;
+  margin-bottom: 27px;
+  margin-left: 64px;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 /*список карточек*/
-.lots__card-list{
-
-display: flex;
-justify-content: center;
-gap: 25px;
+.lots__card-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
 /*пункт списка карточек*/
-.lots__card-list-item{
-list-style-type: none;
+.lots__card-list-item {
 
   width: 334px;
   min-height: 596px;
+  list-style-type: none;
 }
 
 /*ссылка, обрамляющая карточку*/
-.card-link{
-height: 100%;
-color: #fff;
-text-decoration: none;
+.card-link {
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*карточка*/
-.card{
+.card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* flex-wrap: nowrap; */
   align-items: center;
-position: relative;
   height: 100%;
-  background-size: cover;
-  background-position: center center;
   padding: 48px;
-
+  background-position: center center;
+  background-size: cover;
 }
 
 /*заголовок карточки*/
-.card__title{
-    font-family: 'Raleway';
-    text-decoration: underline;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
+.card__title {
   width: 254px;
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+  text-transform: uppercase;
 }
 
 /*текст карточки*/
-.card__text{
-      font-family: 'Raleway';
-  font-size: 20px;
-  text-decoration: none;
-  color: #fff;
+.card__text {
   width: 254px;
-}
-
-/**/
-.card_type_film{
-  background-image: url(../images/card-lot-01.jpg);
-  z-index: -2;
-}
-
-/**/
-.card_type_book{
-  background-image: url(../images/card-lot-02.jpg);
-  z-index: -2;
-}
-
-/**/
-.card_type_picture{
-  background-image: url(../images/card-lot-03.jpg);
-  z-index: -2;
-}
-
-.lots__look-more-link{
-  display: block;
-  font-family: 'Raleway';
+  font-family: Raleway;
+  font-weight: 400;
   font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/**/
+.card_type_film {
+  z-index: -2;
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+/**/
+.card_type_book {
+  z-index: -2;
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+/**/
+.card_type_picture {
+  z-index: -2;
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots__look-more-link {
+  display: block;
   margin-top: 31px;
   margin-left: 64px;
+  font-family: "Raleway";
+  font-size: 20px;
+}
+.about{
+    display: grid;
+      grid-template-columns: 334px 1fr;
+      gap: 72px;
+}
+
+.about__column{
+
+
+  margin-top: 155px;
+
+}
+
+.about__logo{
+  display: grid;
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  justify-content: center;
+  align-content: center;
+  margin-left: 70px;
+  margin-right: 72px;
+}
+
+.about__logo-image{
+width: 141.54px;
+height: 112.55px;
+
+
+
+
+
+.about__text{
+  color: rgba(0, 0, 0, 1);
+
+font-family: Raleway;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+/* text-align: left; */
+margin-bottom: 24px;
+
 }
 
 
@@ -237,10 +289,9 @@ position: relative;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   height: 293px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
   background-color: antiquewhite;
-
 }
