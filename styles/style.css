@@ -278,7 +278,7 @@
   width: 688px;
   margin-bottom: 24px;
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway";
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
@@ -308,7 +308,7 @@
 .footer__menu {
   align-content: top;
   max-height: 64px;
-  font-family: "Ralway";
+  font-family: "Raleway";
   font-weight: 400;
   font-size: 18px;
 }
