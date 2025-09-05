@@ -3,8 +3,8 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
-  font-family: "Raleway";
+  padding: 89px 0 90px;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24.3px;
@@ -22,14 +22,14 @@
   margin-left: 50px;
 }
 
-.header__links-list-item_no-bullit {
-  list-style-type: none;
-}
-
 .header__links-list-item {
   list-style-type: circle;
 }
 
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
 /* .underline-mod {
   border-bottom: 1px black solid;
   text-decoration: none;
@@ -38,8 +38,9 @@
 .header__logo {
   display: block;
   justify-content: left;
+  align-content: center;
   width: 330px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .header__logo-image {
@@ -49,7 +50,7 @@
 .address {
   width: 240px;
   color: #000;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
@@ -63,7 +64,8 @@
 .cover {
   position: relative;
   z-index: -2;
-  min-height: 757px;
+  min-height: auto;
+  padding-bottom: 45px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -91,7 +93,7 @@
 
 .aligned-text {
   color: #fff;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 100px;
 }
@@ -119,7 +121,7 @@
 
 .cover__description-text {
   color: #fff;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 22px;
   letter-spacing: -0.1px;
@@ -128,17 +130,19 @@
 }
 
 .bet-button {
+  display: inline-block;
   width: 256px;
   height: 51px;
   margin-left: 108px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0);
+cursor: pointer;
 }
 
 /*вся секция*/
@@ -156,6 +160,7 @@
 /*список карточек*/
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
 }
@@ -185,13 +190,14 @@
   padding: 48px;
   background-position: center center;
   background-size: cover;
+  z-index: -2;
 }
 
 /*заголовок карточки*/
 .card__title {
   width: 254px;
   color: #fff;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 22px;
   text-align: left;
@@ -203,7 +209,7 @@
 .card__text {
   display: inline;
   width: 254px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.21;
@@ -212,19 +218,16 @@
 
 /**/
 .card_type_film {
-  z-index: -2;
   background-image: url(../images/card-lot-01.jpg);
 }
 
 /**/
 .card_type_book {
-  z-index: -2;
   background-image: url(../images/card-lot-02.jpg);
 }
 
 /**/
 .card_type_picture {
-  z-index: -2;
   background-image: url(../images/card-lot-03.jpg);
 }
 
@@ -232,7 +235,7 @@
   display: block;
   margin-top: 31px;
   margin-left: 64px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   /* font-weight: normal; */
   font-size: 20px;
 }
@@ -267,7 +270,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 40px;
   text-align: left;
@@ -278,7 +281,7 @@
   width: 688px;
   margin-bottom: 24px;
   color: #000;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
@@ -293,9 +296,8 @@
   grid-template-columns: max-content 1fr 1fr;
   align-items: top;
   gap: 90px;
-  height: 180px;
   padding-left: 50px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
@@ -308,7 +310,7 @@
 .footer__menu {
   align-content: top;
   max-height: 64px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
